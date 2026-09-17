@@ -1,84 +1,249 @@
 <!doctype html>
-<html lang="fr"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Brice White — CV professionnel</title>
-<meta name="description" content="Création et optimisation de CV professionnels et candidatures.">
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Brice White — création et optimisation de CV professionnels à partir de 15 €.">
+<meta name="theme-color" content="#0b1b33">
+<title>Brice White — CV professionnel à partir de 15 €</title>
 <style>
-:root{--n:#0b1b33;--b:#4f8ff7;--bg:#f5f7fb;--m:#667085}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#182230;background:var(--bg)}
-header{background:linear-gradient(135deg,#071426,#17335d);color:#fff;padding:20px 7%;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:24px;font-weight:800}.logo span{color:#7eb0ff}nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:700}
-.hero{padding:65px 7%;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:#fff}
-.ey{color:var(--b);font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
-h1{font-size:clamp(38px,5vw,62px);line-height:1.02;color:var(--n);margin:12px 0 20px}h1 span{color:var(--b)}
-p{font-size:18px;line-height:1.6;color:var(--m)}.cta{display:inline-block;background:var(--b);color:#fff;text-decoration:none;padding:15px 22px;border-radius:10px;font-weight:800}
-.price{font-size:29px;font-weight:900;color:var(--n);margin-top:18px}.price small{font-size:14px;color:var(--m)}
-.hero img{width:100%;border-radius:16px;box-shadow:0 18px 45px #0b1b3330}
-section{padding:60px 7%;max-width:1200px;margin:auto}h2{font-size:35px;color:var(--n)}
-.grid,.port{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card,.pc{background:#fff;border-radius:15px;padding:24px;box-shadow:0 8px 25px #0b1b3310}
-.card h3,.pc h3{color:var(--n)}.card strong{font-size:28px;color:var(--b)}.card li{color:var(--m);line-height:1.8}
-.portfolio{background:#eef2f8;max-width:none}.pc embed{width:100%;height:380px;border:1px solid #ddd;border-radius:8px}
-.contact{background:var(--n);max-width:none;text-align:center}.contact h2{color:#fff}.contact p{color:#d5deeb}
-footer{text-align:center;padding:25px;color:#7b8493;font-size:13px}
-@media(max-width:800px){.hero,.grid,.port{grid-template-columns:1fr}nav{display:none}}
-</style>
-<style>
-.after-payment{margin:28px auto 0;max-width:850px;padding:18px 20px;border-radius:14px;background:#f5f7fb;line-height:1.6}
-.card .btn{display:inline-block;margin-top:18px;text-decoration:none;cursor:pointer}
-.badge{display:inline-block;margin-bottom:8px;padding:5px 10px;border-radius:999px;font-size:.82rem;font-weight:700}
-@media (max-width:700px){.after-payment{font-size:.95rem}.card .btn{width:100%;box-sizing:border-box;text-align:center}}
+:root{
+  --navy:#0b1b33; --navy2:#17335d; --blue:#2f80ed; --blue2:#1769d1;
+  --bg:#f5f7fb; --text:#182230; --muted:#667085; --white:#fff;
+  --line:#e5eaf1; --green:#14804a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--bg)}
+a{color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;position:sticky;top:0;z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.logo{font-size:23px;font-weight:900;letter-spacing:.2px}
+.logo span{color:#7eb0ff}
+nav a{text-decoration:none;margin-left:22px;font-weight:700;font-size:14px}
+.hero{background:#fff;padding:72px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.eyebrow{font-size:13px;font-weight:900;letter-spacing:1.5px;color:var(--blue);text-transform:uppercase}
+h1{font-size:clamp(38px,6vw,64px);line-height:1.03;margin:12px 0 20px;color:var(--navy)}
+h1 span{color:var(--blue)}
+.lead{font-size:19px;line-height:1.7;color:var(--muted);max-width:680px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;border:0;border-radius:12px;padding:14px 18px;font-weight:900;text-decoration:none;text-align:center;cursor:pointer}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue2)}
+.btn-light{background:#eef4ff;color:var(--blue)}
+.price-note{margin-top:16px;color:var(--muted);font-weight:700}
+.hero-card{background:linear-gradient(160deg,#eff5ff,#ffffff);border:1px solid #dbe7fb;border-radius:24px;padding:28px;box-shadow:0 18px 45px rgba(11,27,51,.10)}
+.mock-cv{background:#fff;border-radius:16px;border:1px solid var(--line);padding:22px}
+.mock-top{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.avatar{width:54px;height:54px;border-radius:50%;background:#dce9ff;display:grid;place-items:center;color:var(--blue);font-size:22px;font-weight:900}
+.mock-name{font-size:18px;font-weight:900;color:var(--navy)}
+.mock-role{font-size:13px;color:var(--muted);margin-top:3px}
+.mock-line{height:8px;background:#edf1f6;border-radius:20px;margin:11px 0}
+.mock-line.short{width:62%}
+.section{padding:68px 0}
+.section.alt{background:#eef2f8}
+h2{font-size:36px;color:var(--navy);margin:0 0 10px}
+.section-intro{color:var(--muted);font-size:17px;margin:0 0 30px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 25px rgba(11,27,51,.06);display:flex;flex-direction:column}
+.card.featured{border:2px solid #9ec2ff;box-shadow:0 12px 35px rgba(47,128,237,.13)}
+.badge{display:inline-block;align-self:flex-start;background:#eaf3ff;color:var(--blue);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:900;margin-bottom:10px}
+.card h3{font-size:21px;color:var(--navy);margin:4px 0 8px}
+.card .big-price{font-size:34px;font-weight:900;color:var(--blue);margin-bottom:12px}
+.card p,.card li{color:var(--muted);line-height:1.6}
+.card ul{padding-left:20px;min-height:144px}
+.card .btn{margin-top:auto}
+.after-payment{margin-top:24px;padding:18px 20px;border-radius:14px;background:#f5f7fb;border:1px solid var(--line);color:#475467;line-height:1.6}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.portfolio-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 8px 25px rgba(11,27,51,.06)}
+.portfolio-card h3{margin:0 0 5px;color:var(--navy)}
+.portfolio-card p{margin:0 0 16px;color:var(--muted)}
+.cv-preview{height:250px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(#fff 0 0) padding-box;position:relative;overflow:hidden;padding:20px}
+.cv-preview:before{content:"CV FICTIF";position:absolute;top:12px;right:12px;font-size:11px;font-weight:900;color:#98a2b3}
+.cv-head{height:24px;width:56%;background:#dfe8f7;border-radius:4px;margin-bottom:14px}
+.cv-sub{height:10px;width:42%;background:#edf1f6;border-radius:4px;margin-bottom:18px}
+.cv-row{height:8px;background:#edf1f6;border-radius:4px;margin:10px 0}
+.cv-row.w70{width:70%} .cv-row.w82{width:82%} .cv-row.w60{width:60%}
+.portfolio-actions{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.small{font-size:13px;color:var(--muted)}
+.contact{background:var(--navy);color:#fff;text-align:center;padding:68px 0}
+.contact h2{color:#fff}
+.contact p{color:#d5deeb;max-width:700px;margin:10px auto 24px;line-height:1.7}
+.email{font-weight:900;color:#fff}
+footer{padding:24px 0;text-align:center;color:#7b8493;font-size:13px}
+.notice{margin-top:18px;font-size:13px;color:#667085}
+@media(max-width:850px){
+  nav{display:none}
+  .hero{padding-top:50px}
+  .hero-grid,.cards,.portfolio-grid{grid-template-columns:1fr}
+  .hero-card{order:-1}
+  .card ul{min-height:0}
+}
 </style>
 </head>
 <body>
-<header><div class="logo">Brice <span>White</span></div><nav><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></nav></header>
-<section class="hero"><div><div class="ey">CV • Candidature • Emploi</div>
-<h1>Un CV qui met votre <span>profil en valeur.</span></h1>
-<p>Je crée ou optimise votre CV pour une présentation claire, professionnelle et adaptée au poste recherché.</p>
-<a class="cta" href="#contact">Demander mon CV</a><div class="price">À partir de 15 € <small>• livraison 24–48 h</small></div></div>
-<div><img src="assets/cover.png" alt="Brice White — création de CV"></div></section>
-<section id="services"><h2>Des formules simples</h2><div class="grid">
-<div class="card"><h3>Basic — CV Essentiel</h3><strong>15 €</strong><ul><li>Création ou optimisation</li><li>Correction et reformulation</li><li>Mise en page professionnelle</li><li>1 révision</li><li>Livraison sous 48 h</li></ul></div>
-<div class="card"><h3>Standard — CV + Lettre</h3><strong>25 €</strong><ul><li>CV professionnel</li><li>Lettre personnalisée</li><li>Adaptation au poste</li><li>2 révisions</li><li>Livraison sous 48 h</li></ul></div>
-<div class="card"><h3>Premium — Pack Candidature</h3><strong>40 €</strong><ul><li>CV optimisé</li><li>Lettre personnalisée</li><li>Adaptation à une offre précise</li><li>Optimisation ATS</li><li>3 révisions</li></ul></div>
-</div></section>
+<header>
+  <div class="container nav">
+    <div class="logo">Brice <span>White</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<section id="services" class="section">
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">CV • Candidature • Emploi</div>
+      <h1>Un CV qui met votre <span>profil en valeur.</span></h1>
+      <p class="lead">Création ou optimisation de CV professionnels, correction et reformulation, mise en page moderne et adaptation au poste recherché.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#services">Voir les formules</a>
+        <a class="btn btn-light" href="#portfolio">Voir les CV fictifs</a>
+      </div>
+      <div class="price-note">À partir de 15 € • livraison 24–48 h</div>
+    </div>
+    <div class="hero-card" aria-label="Aperçu d'un CV professionnel">
+      <div class="mock-cv">
+        <div class="mock-top">
+          <div class="avatar">BW</div>
+          <div><div class="mock-name">Brice White</div><div class="mock-role">Création & optimisation de CV</div></div>
+        </div>
+        <div class="mock-line"></div><div class="mock-line short"></div>
+        <div class="mock-line"></div><div class="mock-line"></div>
+        <div class="mock-line short"></div><div class="mock-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
   <div class="container">
     <h2>Mes formules</h2>
     <p class="section-intro">Choisissez votre formule et réglez directement en ligne.</p>
     <div class="cards">
+
       <article class="card">
-        <div class="price">15 €</div>
         <h3>CV Essentiel</h3>
-        <p>Création ou optimisation d’un CV professionnel, correction, reformulation et mise en page moderne.</p>
-        <ul><li>CV clair et professionnel</li><li>Correction et reformulation</li><li>1 révision</li><li>Livraison 24–48 h</li></ul>
-        <a class="btn" href="https://buy.stripe.com/aFa3cw6OugSp1FX6Jpbwk00" target="_blank" rel="noopener">Commander — 15 €</a>
+        <div class="big-price">15 €</div>
+        <p>Création ou optimisation d’un CV professionnel avec correction, reformulation et mise en page moderne.</p>
+        <ul>
+          <li>CV clair et professionnel</li>
+          <li>Correction et reformulation</li>
+          <li>1 révision</li>
+          <li>Livraison 24–48 h</li>
+        </ul>
+        <a class="btn btn-primary" href="https://buy.stripe.com/aFa3cw6OugSp1FX6Jpbwk00" target="_blank" rel="noopener">Commander — 15 €</a>
       </article>
+
       <article class="card featured">
         <div class="badge">Le plus choisi</div>
-        <div class="price">25 €</div>
-        <h3>CV + Lettre</h3>
-        <p>CV professionnel accompagné d’une lettre de motivation personnalisée et adaptée au poste recherché.</p>
-        <ul><li>CV optimisé</li><li>Lettre personnalisée</li><li>Adaptation au poste</li><li>2 révisions</li></ul>
-        <a class="btn" href="https://buy.stripe.com/cNi28sc8OdGd1FX2t9bwk01" target="_blank" rel="noopener">Commander — 25 €</a>
+        <h3>CV + Lettre de motivation</h3>
+        <div class="big-price">25 €</div>
+        <p>Un CV professionnel accompagné d’une lettre personnalisée et adaptée au poste recherché.</p>
+        <ul>
+          <li>CV optimisé</li>
+          <li>Lettre personnalisée</li>
+          <li>Adaptation au poste</li>
+          <li>2 révisions</li>
+        </ul>
+        <a class="btn btn-primary" href="https://buy.stripe.com/cNi28sc8OdGd1FX2t9bwk01" target="_blank" rel="noopener">Commander — 25 €</a>
       </article>
+
       <article class="card">
-        <div class="price">40 €</div>
         <h3>Pack Candidature</h3>
-        <p>Une candidature complète avec CV optimisé, lettre personnalisée et adaptation à l’offre d’emploi.</p>
-        <ul><li>CV optimisé</li><li>Lettre personnalisée</li><li>Adaptation à l’offre</li><li>Optimisation ATS</li><li>3 révisions</li></ul>
-        <a class="btn" href="https://buy.stripe.com/7sYdRaegW9pX4S98Rxbwk02" target="_blank" rel="noopener">Commander — 40 €</a>
+        <div class="big-price">40 €</div>
+        <p>Une candidature complète avec CV optimisé, lettre personnalisée et adaptation à une offre d’emploi précise.</p>
+        <ul>
+          <li>CV optimisé</li>
+          <li>Lettre personnalisée</li>
+          <li>Adaptation à l’offre</li>
+          <li>Optimisation ATS</li>
+          <li>3 révisions</li>
+        </ul>
+        <a class="btn btn-primary" href="https://buy.stripe.com/7sYdRaegW9pX4S98Rxbwk02" target="_blank" rel="noopener">Commander — 40 €</a>
       </article>
+
     </div>
-    <div class="after-payment"><strong>Après le paiement :</strong> préparez votre CV actuel, le poste visé et, si vous en avez une, l’offre d’emploi afin de personnaliser votre candidature.</div>
+
+    <div class="after-payment">
+      <strong>Après le paiement :</strong> vous serez redirigé vers le formulaire de commande pour transmettre vos informations et votre CV. Le formulaire ouvre automatiquement la formule correspondant au lien de paiement.
+    </div>
   </div>
 </section>
-<section class="portfolio" id="portfolio"><h2>Exemples de portfolio</h2><p>Les documents présentés sont des exemples entièrement fictifs.</p><div class="port">
-<div class="pc"><h3>Sophie Martin</h3><p>Assistante administrative</p><embed src="assets/01_sophie_martin_assistante_administrative.pdf" type="application/pdf"></div>
-<div class="pc"><h3>Thomas Bernard</h3><p>Serveur — restauration</p><embed src="assets/02_thomas_bernard_serveur.pdf" type="application/pdf"></div>
-<div class="pc"><h3>Julien Robert</h3><p>Reconversion — maintenance</p><embed src="assets/03_julien_robert_reconversion_maintenance.pdf" type="application/pdf"></div>
-</div></section>
-<section class="contact" id="contact"><h2>Votre candidature commence ici</h2><p>Envoyez votre CV actuel et, si disponible, l'offre d'emploi visée.</p>
-<a class="cta" href="mailto:contact@bricewhite.example">Me contacter</a><p style="font-size:12px">À remplacer par ton adresse e-mail avant publication.</p></section>
+
+<section class="section alt" id="portfolio">
+  <div class="container">
+    <h2>3 CV fictifs — exemples de portfolio</h2>
+    <p class="section-intro">Ces trois documents sont entièrement fictifs et servent uniquement à montrer le type de CV que je peux réaliser.</p>
+
+    <div class="portfolio-grid">
+      <article class="portfolio-card">
+        <h3>Sophie Martin</h3>
+        <p>Assistante administrative junior • Lyon</p>
+        <div class="cv-preview" aria-label="Aperçu fictif du CV de Sophie Martin">
+          <div class="cv-head"></div><div class="cv-sub"></div>
+          <div class="cv-row w82"></div><div class="cv-row w70"></div><div class="cv-row w60"></div>
+          <div class="cv-row w82"></div><div class="cv-row w70"></div>
+          <div class="cv-row w60"></div>
+        </div>
+        <div class="portfolio-actions">
+          <a class="btn btn-light" href="01_sophie_martin_assistante_administrative.pdf" target="_blank" rel="noopener">Voir le CV</a>
+          <a class="btn btn-primary" href="01_sophie_martin_assistante_administrative.pdf" download>Télécharger</a>
+        </div>
+        <div class="notice">Exemple fictif</div>
+      </article>
+
+      <article class="portfolio-card">
+        <h3>Thomas Bernard</h3>
+        <p>Serveur en restauration • Marseille</p>
+        <div class="cv-preview" aria-label="Aperçu fictif du CV de Thomas Bernard">
+          <div class="cv-head"></div><div class="cv-sub"></div>
+          <div class="cv-row w70"></div><div class="cv-row w82"></div><div class="cv-row w60"></div>
+          <div class="cv-row w82"></div><div class="cv-row w70"></div>
+          <div class="cv-row w60"></div>
+        </div>
+        <div class="portfolio-actions">
+          <a class="btn btn-light" href="02_thomas_bernard_serveur.pdf" target="_blank" rel="noopener">Voir le CV</a>
+          <a class="btn btn-primary" href="02_thomas_bernard_serveur.pdf" download>Télécharger</a>
+        </div>
+        <div class="notice">Exemple fictif</div>
+      </article>
+
+      <article class="portfolio-card">
+        <h3>Julien Robert</h3>
+        <p>Technicien de maintenance en reconversion • Lille</p>
+        <div class="cv-preview" aria-label="Aperçu fictif du CV de Julien Robert">
+          <div class="cv-head"></div><div class="cv-sub"></div>
+          <div class="cv-row w60"></div><div class="cv-row w82"></div><div class="cv-row w70"></div>
+          <div class="cv-row w82"></div><div class="cv-row w60"></div>
+          <div class="cv-row w70"></div>
+        </div>
+        <div class="portfolio-actions">
+          <a class="btn btn-light" href="03_julien_robert_reconversion_maintenance.pdf" target="_blank" rel="noopener">Voir le CV</a>
+          <a class="btn btn-primary" href="03_julien_robert_reconversion_maintenance.pdf" download>Télécharger</a>
+        </div>
+        <div class="notice">Exemple fictif</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>Votre candidature commence ici</h2>
+    <p>Pour une commande, choisissez l’une des trois formules ci-dessus. Après le paiement, vous pourrez transmettre votre CV et les informations nécessaires via le formulaire.</p>
+    <a class="btn btn-primary" href="https://form.jotform.com/262585253656062" target="_blank" rel="noopener">Ouvrir le formulaire de commande</a>
+    <p class="email">bricewhitecv@gmail.com</p>
+  </div>
+</section>
+</main>
+
 <footer>© 2026 Brice White — Création et optimisation de CV</footer>
-</body></html>
+</body>
+</html>
